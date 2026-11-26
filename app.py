@@ -6,9 +6,11 @@ st.set_page_config(page_title="Prediksi Kualitas Wine", page_icon="🍷", layout
 
 halaman = {
     "Pengantar": [
-        st.Page("views/beranda.py", title="Beranda", icon=":material/home:", default=True),
-        st.Page("views/dataset.py", title="Tentang Dataset", icon=":material/dataset:"),
-        st.Page("views/eda.py", title="Eksplorasi Data (EDA)", icon=":material/bar_chart:"),
+        st.Page("beranda.py", title="Beranda", icon=":material/home:", default=True),
+        st.Page("dataset.py", title="Dataset", ...),
+        st.Page("eda.py", title="EDA", ...),
+    ],
+}
     ],
     "Pengolahan & Model": [
         st.Page("views/preprocessing.py", title="Preprocessing", icon=":material/tune:"),
